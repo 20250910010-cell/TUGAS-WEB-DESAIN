@@ -1,0 +1,69 @@
+/* STYLE PROFIL PROGRAM STUDI */
+
+main {
+width: 90%;
+max-width: 1000px;
+margin: 30px auto;
+}
+
+main div {
+width: 100%;
+}
+
+article {
+background-color: #FFFFFF;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+color: #4E342E;
+font-size: 16px;
+line-height: 1.8;
+text-align: justify;
+}
+
+/* Gambar Program Studi */
+article img {
+display: block;
+width: 100%;
+max-width: 768px;
+height: auto;
+margin: 0 auto 25px;
+border-radius: 8px;
+}
+
+/* Judul Visi dan Profil */
+article div {
+color: #8D5A44;
+font-size: 22px;
+margin-top: 20px;
+margin-bottom: 10px;
+padding-bottom: 8px;
+border-bottom: 2px solid #D7B49E;
+}
+
+/* Bagian Profil Lulusan */
+article div b i {
+color: #A65D57;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 600px) {
+main {
+width: 100%;
+margin: 15px auto;
+}
+
+article {
+    padding: 20px;
+    font-size: 14px;
+}
+
+article div {
+    font-size: 18px;
+}
+
+article img {
+    width: 100%;
+}
+
+}
