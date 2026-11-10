@@ -1,0 +1,14 @@
+.judul {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.teks-tebal {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.teks-miring {
+    font-style: italic;
+    word-spacing: 5px;
+}
