@@ -1,0 +1,92 @@
+/* STYLE BAGIAN VISI DAN MISI */
+
+main {
+width: 90%;
+max-width: 1000px;
+margin: 30px auto;
+}
+
+main div {
+width: 100%;
+}
+
+article {
+background-color: #FFFFFF;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+article h1 {
+text-align: center;
+color: #8D5A44;
+font-size: 28px;
+margin-bottom: 25px;
+padding-bottom: 12px;
+border-bottom: 3px solid #D7B49E;
+}
+
+
+dl {
+margin-top: 15px;
+}
+
+dt {
+color: #A65D57;
+font-size: 22px;
+font-weight: bold;
+margin-bottom: 10px;
+margin-top: 20px;
+}
+
+
+dd {
+color: #4E342E;
+font-size: 16px;
+text-align: justify;
+margin-left: 15px;
+margin-bottom: 15px;
+}
+
+
+ol {
+padding-left: 35px;
+margin-top: 10px;
+}
+
+ol li {
+padding-left: 8px;
+margin-bottom: 15px;
+text-align: justify;
+line-height: 1.8;
+}
+
+
+ol li:hover {
+color: #A65D57;
+}
+
+@media screen and (max-width: 600px) {
+main {
+width: 100%;
+margin: 15px auto;
+}
+
+article {
+    padding: 20px;
+}
+
+article h1 {
+    font-size: 24px;
+}
+
+dt {
+    font-size: 20px;
+}
+
+dd, ol li {
+    font-size: 14px;
+}
+
+}
