@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Alumni</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #FFF8F0;
+            color: #4E342E;
+        }
+
+        header {
+            background-color: #8D5A44;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #A65D57;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #F5D6C6;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #A65D57;
+            text-align: center;
+        }
+
+        #cariAlumni {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #C9A99A;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .daftar-alumni {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .profil-alumni {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 8px #E8D5C8;
+            transition: 0.3s;
+        }
+
+        .profil-alumni:hover {
+            transform: translateY(-5px);
+            background-color: #F5E5DC;
+        }
+
+        .foto {
+            font-size: 50px;
+        }
+
+        .profil-alumni h3 {
+            color: #A65D57;
+        }
+
+        .profil-alumni p {
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #A65D57;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8D5A44;
+        }
+
+        .tentang {
+            background-color: #F0DDD2;
+            text-align: center;
+            padding: 30px;
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #8D5A44;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .daftar-alumni {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PROFIL ALUMNI</h1>
+        <p>Fakultas Ilmu Komputer</p>
+        <p>Universitas Kuningan</p>
+    </header>
+
+   
+    <div class="container" id="beranda">
+
+        <h2>Selamat Datang di Profil Alumni</h2>
+
+        <p style="text-align:center;">
+            Halaman informasi dan daftar profil alumni
+            Fakultas Ilmu Komputer.
+        </p>
+
+    </div>
+
+    <div class="container" id="alumni">
+
+        <h2>Daftar Alumni</h2>
+
+        <input
+            type="text"
+            id="cariAlumni"
+            placeholder="Cari nama atau jurusan alumni..."
+            onkeyup="cariData()"
+        >
+
+        <div class="daftar-alumni">
+
+            <div class="profil-alumni">
+                <div class="foto">👩🏻‍🎓</div>
+                <h3>Indra Kurniawan</h3>
+                <p>Jurusan: Sistem Informasi</p>
+                <p>Angkatan: 2025</p>
+                <button onclick="detail('Indra Kurniawan')">
+                    Detail
+                </button>
+            </div>
+
+            <div class="profil-alumni">
+                <div class="foto">👩🏻‍🎓</div>
+                <h3>Melisa Syakira</h3>
+                <p>Jurusan: Teknik Informatika</p>
+                <p>Angkatan: 2024</p>
+                <button onclick="detail('Melisa Syakira')">
+                    Detail
+                </button>
+            </div>
+
+            <div class="profil-alumni">
+                <div class="foto">👨🏻‍🎓</div>
+                <h3>Azis Mubarok</h3>
+                <p>Jurusan: Sistem Informasi</p>
+                <p>Angkatan: 2023</p>
+                <button onclick="detail('Azis Mubarok')">
+                    Detail
+                </button>
+            </div>
+
+            <div class="profil-alumni">
+                <div class="foto">👩🏻‍🎓</div>
+                <h3>Muhammad Rizki </h3>
+                <p>Jurusan: DKV</p>
+                <p>Angkatan: 2024</p>
+                <button onclick="detail('Muhammad Rizki')">
+                    Detail
+                </button>
+            </div>
+
+             <div class="profil-alumni">
+                <div class="foto">👩🏻‍🎓</div>
+                <h3>Putri Kinanti</h3>
+                <p>Jurusan: Sistem Informasi</p>
+                <p>Angkatan: 2025</p>
+                <button onclick="detail('Putri Kinanti')">
+                    Detail
+                </button>
+            </div>
+
+            <div class="profil-alumni">
+                <div class="foto">👩🏻‍🎓</div>
+                <h3>Pebi Welian Putra</h3>
+                <p>Jurusan: Teknik Informatika</p>
+                <p>Angkatan: 2024</p>
+                <button onclick="detail('Pebi Welian Putra')">
+                    Detail
+                </button>
+            </div>
+
+            <div class="profil-alumni">
+                <div class="foto">👨🏻‍🎓</div>
+                <h3>Kumairah</h3>
+                <p>Jurusan: Sistem Informasi</p>
+                <p>Angkatan: 2023</p>
+                <button onclick="detail('Kumairah')">
+                    Detail
+                </button>
+            </div>
+
+            <div class="profil-alumni">
+                <div class="foto">👩🏻‍🎓</div>
+                <h3>Martin Muhammad </h3>
+                <p>Jurusan: DKV</p>
+                <p>Angkatan: 2024</p>
+                <button onclick="detail('Martin Muhammad')">
+                    Detail
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Alumni</h2>
+        <p>
+            Website ini dibuat untuk menampilkan informasi
+            profil alumni Fakultas Ilmu Komputer Universitas
+            Kuningan agar lebih mudah dikenal dan diakses.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Profil Alumni Universitas Kuningan</p>
+    </footer>
+
+    <script>
+        function cariData() {
+            let input = document.getElementById("cariAlumni")
+                .value.toLowerCase();
+
+            let alumni = document.getElementsByClassName(
+                "profil-alumni"
+            );
+
+            for (let i = 0; i < alumni.length; i++) {
+                let data = alumni[i].innerText.toLowerCase();
+
+                if (data.includes(input)) {
+                    alumni[i].style.display = "";
+                } else {
+                    alumni[i].style.display = "none";
+                }
+            }
+        }
+
+        function detail(nama) {
+            alert("Profil Alumni: " + nama);
+        }
+    </script>
+
+</body>
+</html>
